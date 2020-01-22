@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 
 import Header from './header';
 
-const Layout = ({ children }) => {
+const Layout = ({ home, children }) => {
   const [isOpen, setOpen] = React.useState(false);
 
   return (
     <div className="relative flex font-sans antialiased text-gray-700">
-      <Header isOpen={isOpen} setOpen={setOpen} />
+      <Header home={home} isOpen={isOpen} setOpen={setOpen} />
       <main id="main" className="flex-1 w-full min-h-screen">
         <button
           type="button"
@@ -32,6 +32,7 @@ const Layout = ({ children }) => {
 };
 
 Layout.propTypes = {
+  home: PropTypes.bool,
   children: PropTypes.node.isRequired,
 };
 

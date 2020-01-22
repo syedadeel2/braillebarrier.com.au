@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import useGraphql from '../hooks/use-graphql';
 import siteNavigation from '../data/site-navigation';
 
-const Header = ({ isOpen }) => {
+const Header = ({ home, isOpen }) => {
   const { site } = useGraphql();
   return (
     <header
@@ -18,9 +18,15 @@ const Header = ({ isOpen }) => {
         <ul className="w-40 leading-tight uppercase">
           {siteNavigation.map(navItem => (
             <li key={navItem.id} className="flex">
-              <AnchorLink href={navItem.href} className="pt-4">
-                {navItem.label}
-              </AnchorLink>
+              {home ? (
+                <AnchorLink href={navItem.href} className="pt-4">
+                  {navItem.label}
+                </AnchorLink>
+              ) : (
+                <Link to={`/${navItem.href}`} className="pt-4">
+                  {navItem.label}
+                </Link>
+              )}
             </li>
           ))}
         </ul>
@@ -49,6 +55,7 @@ const Header = ({ isOpen }) => {
 };
 
 Header.propTypes = {
+  home: PropTypes.bool,
   isOpen: PropTypes.bool,
 };
 

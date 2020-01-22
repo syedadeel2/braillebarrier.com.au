@@ -8,7 +8,7 @@ import Contact from '../components/contact';
 import MeetOurNeighbours from '../components/meet-our-neighbours';
 
 const IndexPage = () => (
-  <Layout>
+  <Layout home>
     <SEO title="Home" />
     <Home />
     <About />
