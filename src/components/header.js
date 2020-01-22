@@ -4,10 +4,15 @@ import { Link } from 'gatsby';
 import useGraphql from '../hooks/use-graphql';
 import siteNavigation from '../data/site-navigation';
 
-const Header = () => {
+const Header = ({ isOpen }) => {
   const { site } = useGraphql();
   return (
-    <header className="sticky top-0 bottom-0 left-0 h-screen px-12 py-24 overflow-y-auto font-medium text-white bg-blue-600 w-80 bg-gradient">
+    <header
+      // style={{ transform: `${isOpen ? 'translateX(0)' : 'translateX(-100%)'}` }}
+      className={`fixed h-screen px-12 py-24 overflow-y-auto font-medium text-white bg-blue-600 transform transition ease-in duration-200 md:sticky md:top-0 md:bottom-0 md:left-0 w-80 bg-gradient md:translate-x-0${
+        isOpen ? ' translate-x-0' : ' -translate-x-full'
+      }`}
+    >
       <nav>
         <ul className="w-40 leading-tight uppercase">
           {siteNavigation.map(navItem => (
