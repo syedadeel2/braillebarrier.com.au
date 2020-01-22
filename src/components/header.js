@@ -1,4 +1,5 @@
 import React from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 
@@ -17,9 +18,9 @@ const Header = ({ isOpen }) => {
         <ul className="w-40 leading-tight uppercase">
           {siteNavigation.map(navItem => (
             <li key={navItem.id} className="flex">
-              <Link to={navItem.href} className="pt-4">
+              <AnchorLink href={navItem.href} className="pt-4">
                 {navItem.label}
-              </Link>
+              </AnchorLink>
             </li>
           ))}
         </ul>

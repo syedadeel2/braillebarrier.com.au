@@ -5,7 +5,7 @@ import SEO from '../components/seo';
 import Home from '../components/home';
 import About from '../components/about';
 import Contact from '../components/contact';
-import OurNeighbours from '../components/our-neighbours';
+import MeetOurNeighbours from '../components/meet-our-neighbours';
 
 const IndexPage = () => (
   <Layout>
@@ -13,7 +13,7 @@ const IndexPage = () => (
     <Home />
     <About />
     <Contact />
-    <OurNeighbours />
+    <MeetOurNeighbours />
   </Layout>
 );
 

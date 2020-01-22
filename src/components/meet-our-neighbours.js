@@ -1,8 +1,8 @@
 import React from 'react';
 
-const OurNeighbours = () => {
+const MeetOurNeighbours = () => {
   return (
-    <article className="px-6 py-12 bg-gray-200">
+    <article id="meet-our-neighbours" className="px-6 py-12 bg-gray-200">
       <div className="w-full max-w-3xl mx-auto">
         <div className="pt-6">
           <h2 className="mt-12 h2">
@@ -54,4 +54,4 @@ const OurNeighbours = () => {
   );
 };
 
-export default OurNeighbours;
+export default MeetOurNeighbours;

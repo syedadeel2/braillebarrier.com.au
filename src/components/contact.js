@@ -3,7 +3,7 @@ import Form from './form';
 
 const Contact = () => {
   return (
-    <article className="px-6 py-12">
+    <article id="contact" className="px-6 py-12">
       <div className="w-full max-w-3xl mx-auto">
         <div className="py-6">
           <h2 className="mt-12 h2">

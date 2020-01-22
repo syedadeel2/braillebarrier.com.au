@@ -6,7 +6,7 @@ import logo from '../images/braille-at-barrier-logo.svg';
 const Home = () => {
   const { site } = useGraphql();
   return (
-    <article className="px-6 py-12">
+    <article id="home" className="px-6 py-12">
       <div className="w-full max-w-3xl pt-6 mx-auto">
         <div className="md:flex md:items-end md:justify-between">
           <h1 className="w-full max-w-xs">
