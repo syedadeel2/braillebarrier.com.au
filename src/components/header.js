@@ -7,10 +7,7 @@ import siteNavigation from '../data/site-navigation';
 const Header = () => {
   const { site } = useGraphql();
   return (
-    <header
-      style={{ background: `linear-gradient(90deg, #0b5eb4 0%, #27aae1 100%)` }}
-      className="w-full h-screen max-w-xs px-12 py-24 overflow-y-auto font-medium text-white bg-blue-600"
-    >
+    <header className="sticky top-0 bottom-0 left-0 w-full h-screen max-w-xs px-12 py-24 overflow-y-auto font-medium text-white bg-blue-600 bg-gradient">
       <nav>
         <ul className="w-40 leading-tight uppercase">
           {siteNavigation.map(navItem => (

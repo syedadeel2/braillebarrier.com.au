@@ -1,12 +1,15 @@
 /* These classes have lower specificity so we can override them
    with utility classes */
 
-.highlight {
+.bg-gradient {
   background-image: linear-gradient(
-    to bottom,
-    transparent 70%,
-    theme('colors.teal.200') 70%
+    90deg,
+    rgb(11, 94, 180) 0%,
+    rgb(39, 170, 225) 100%
   );
-  color: theme('colors.teal.600');
-  @apply font-bold inline-block;
+  background-position: initial initial;
+  background-repeat: initial initial;
+}
+.button {
+  @apply inline-block px-4 py-1 mt-6 font-semibold text-white whitespace-no-wrap rounded-l-full rounded-r-full w-40 text-center;
 }

@@ -5,6 +5,7 @@ const useGraphql = () => {
     {
       site {
         siteMetadata {
+          title
           address
           ABN
           phone

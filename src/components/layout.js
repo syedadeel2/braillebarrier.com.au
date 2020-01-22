@@ -23,9 +23,9 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <div className="flex font-sans antialiased text-gray-600">
+    <div className="relative flex font-sans antialiased text-gray-700">
       <Header siteTitle={data.site.siteMetadata.title} />
-      <main id="main" className="flex-1 w-full min-h-screen overflow-y-auto">
+      <main id="main" className="flex-1 w-full min-h-screen">
         {children}
       </main>
     </div>
