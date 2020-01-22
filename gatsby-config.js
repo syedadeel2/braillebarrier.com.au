@@ -1,9 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind.`,
-    author: `@luke_bennett_`,
-    siteUrl: `https://gatsby-starter-tailwindcss.netlify.com`,
+    title: `Braille@Barrier`,
+    description: `We create custom braille and tactile signage!`,
+    author: ``,
+    address: `15-19 Grey Gum Road, Taree, 2430`,
+    ABN: `53 003 154 041`,
+    phone: `(02) 6552 7200`,
+    email: `sales@barriersigns.com.au`,
+    siteUrl: `https://www.braillebarrier.com.au`,
   },
   plugins: [
     `gatsby-plugin-netlify`,
@@ -13,24 +17,24 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-canonical-urls`,
-    //   options: {
-    //     siteUrl: `https://www.lukebennett.com.au`,
-    //   },
-    // },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        name: `gatsby-starter-tailwindcss`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#fff`,
-        theme_color: `#319795`,
-        display: `minimal-ui`,
-        icon: `src/images/logo.svg`, // This path is relative to the root of the site.
+        siteUrl: `https://www.braillebarrier.com.au`,
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: `gatsby-starter-tailwindcss`,
+    //     short_name: `starter`,
+    //     start_url: `/`,
+    //     background_color: `#fff`,
+    //     theme_color: `#319795`,
+    //     display: `minimal-ui`,
+    //     icon: `src/images/logo.svg`, // This path is relative to the root of the site.
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {

@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-tailwindcss",
+  "name": "braille-barrier",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby and Tailwind",
+  "description": "Website for Braille@Barrier.com.au",
   "version": "0.1.0",
   "author": "Luke Bennett <hello@lukebennett.com.au>",
   "dependencies": {
