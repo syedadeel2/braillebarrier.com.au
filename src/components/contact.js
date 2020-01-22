@@ -3,10 +3,9 @@ import Form from './form';
 
 const Contact = () => {
   return (
-    <article className="px-6 pt-12 pb-6">
+    <article className="px-6 py-12">
       <div className="w-full max-w-3xl mx-auto">
-        <div>
-          <h2 className="mt-12 text-6xl leading-none text-black">
+        <div className="py-6">
           <h2 className="mt-12 h2">
             Talk to our <span className="font-bold">friendly staff</span> today.
           </h2>

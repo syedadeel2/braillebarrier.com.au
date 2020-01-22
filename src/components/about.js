@@ -2,8 +2,9 @@ import React from 'react';
 
 const About = () => {
   return (
-    <article className="px-6 pt-12 pb-6 bg-gray-200">
+    <article className="px-6 py-12 bg-gray-200">
       <div className="w-full max-w-3xl mx-auto">
+        <div className="pt-6">
           <h2 className="mt-12 h2">
             We <span className="font-bold">specialise</span> in{' '}
             <span className="font-bold">Braille</span> and{' '}

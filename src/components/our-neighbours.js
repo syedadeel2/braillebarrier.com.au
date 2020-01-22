@@ -2,14 +2,15 @@ import React from 'react';
 
 const OurNeighbours = () => {
   return (
-    <article className="px-6 pt-12 pb-6 bg-gray-200">
+    <article className="px-6 py-12 bg-gray-200">
       <div className="w-full max-w-3xl mx-auto">
+        <div className="pt-6">
           <h2 className="mt-12 h2">
             Our <span className="font-bold">neighbours</span> can{' '}
             <span className="font-bold">help you</span> with your{' '}
             <span className="font-bold">next project</span>.
           </h2>
-          <div className="flex flex-wrap -mx-4">
+          <div className="flex flex-wrap pt-6 -mx-4">
             <div className="w-full px-4 mt-12 md:w-1/2">
               <h3>Barrier Signs</h3>
               <p>
