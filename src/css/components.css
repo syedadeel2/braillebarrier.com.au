@@ -13,3 +13,13 @@
 .button {
   @apply inline-block px-4 py-1 mt-6 font-semibold text-white whitespace-no-wrap rounded-l-full rounded-r-full w-40 text-center;
 }
+
+.h2 {
+  @apply mt-12 text-4xl leading-none text-black;
+}
+
+@screen md {
+  .h2 {
+    @apply text-6xl;
+  }
+}

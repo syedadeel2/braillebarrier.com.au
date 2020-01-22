@@ -4,8 +4,7 @@ const About = () => {
   return (
     <article className="px-6 pt-12 pb-6 bg-gray-200">
       <div className="w-full max-w-3xl mx-auto">
-        <div>
-          <h2 className="text-6xl leading-none text-black">
+          <h2 className="mt-12 h2">
             We <span className="font-bold">specialise</span> in{' '}
             <span className="font-bold">Braille</span> and{' '}
             <span className="font-bold">Tactile Signage</span>..

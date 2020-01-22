@@ -7,6 +7,7 @@ const Contact = () => {
       <div className="w-full max-w-3xl mx-auto">
         <div>
           <h2 className="mt-12 text-6xl leading-none text-black">
+          <h2 className="mt-12 h2">
             Talk to our <span className="font-bold">friendly staff</span> today.
           </h2>
           <p className="mt-12">

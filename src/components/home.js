@@ -19,8 +19,7 @@ const Home = () => {
             {site.siteMetadata.phone}
           </a>
         </div>
-        <div>
-          <h2 className="mt-12 text-6xl leading-none text-black">
+          <h2 className="mt-12 h2">
             We create <span className="font-bold">custom Braille</span> and{' '}
             <span className="font-bold">Tactile Signage</span>.
           </h2>

@@ -4,8 +4,7 @@ const OurNeighbours = () => {
   return (
     <article className="px-6 pt-12 pb-6 bg-gray-200">
       <div className="w-full max-w-3xl mx-auto">
-        <div>
-          <h2 className="text-6xl leading-none text-black">
+          <h2 className="mt-12 h2">
             Our <span className="font-bold">neighbours</span> can{' '}
             <span className="font-bold">help you</span> with your{' '}
             <span className="font-bold">next project</span>.
