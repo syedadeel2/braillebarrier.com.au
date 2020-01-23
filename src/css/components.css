@@ -15,11 +15,18 @@
 }
 
 .h2 {
-  @apply mt-12 text-4xl leading-none text-black;
+  @apply mt-12 text-4xl leading-none text-black font-light;
 }
 
 @screen md {
   .h2 {
     @apply text-6xl;
   }
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  @apply overflow-hidden;
 }

@@ -11,9 +11,9 @@ const MeetOurNeighbours = () => {
             <span className="font-bold">next project</span>.
           </h2>
           <div className="flex flex-wrap pt-6 -mx-4">
-            <div className="w-full px-4 mt-12 md:w-1/2">
+            <div className="w-full px-4 mt-12 lg:w-1/2">
               <h3>Barrier Signs</h3>
-              <p>
+              <p className="line-clamp ">
                 <span className="font-bold">Barrier Signs</span> is a premier
                 signage company with a proven history of first-class workmanship
                 and professionalism. Priding itself on meticulous quality
@@ -29,14 +29,14 @@ const MeetOurNeighbours = () => {
                 </a>
               </p>
             </div>
-            <div className="w-full px-4 mt-12 md:w-1/2 md:border-l-2">
+            <div className="w-full px-4 mt-12 lg:w-1/2 lg:border-l-2">
               <h3>JUZVOLTER</h3>
-              <p>
-                <span className="font-bold">Barrier Signs</span> is a premier
-                signage company with a proven history of first-class workmanship
-                and professionalism. Priding itself on meticulous quality
-                control procedures, Barrier Signs has repeatedly won contract
-                for high...
+              <p className="line-clamp">
+                <span className="font-bold">Juzvolter</span> is a Graphic Design
+                Agency based in Taree, NSW. With a strong background in graphic
+                design for a signage context, Juzvolter's unique perspective
+                allows us to create designs that are message-driven, using clean
+                lines...
               </p>
               <p>
                 <a
