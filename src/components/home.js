@@ -1,24 +1,12 @@
 import React from 'react';
 
-import useGraphql from '../hooks/use-graphql';
-import logo from '../images/braille-at-barrier-logo.svg';
+import TopBar from './topbar';
 
 const Home = () => {
-  const { site } = useGraphql();
   return (
     <article id="home" className="px-6 py-12">
       <div className="w-full max-w-3xl pt-6 mx-auto">
-        <div className="md:flex md:items-end md:justify-between">
-          <h1 className="w-full max-w-xs">
-            <img src={logo} alt={site.siteMetadata.title} className="w-full" />
-          </h1>
-          <a
-            href={`tel:${site.siteMetadata.phone.replace(/\s+/g, '')}`}
-            className="bg-gradient button md:mt-0 md:ml-6"
-          >
-            {site.siteMetadata.phone}
-          </a>
-        </div>
+        <TopBar />
         <div className="pt-6">
           <h2 className="mt-12 h2">
             We create <span className="font-bold">custom Braille</span> and{' '}
