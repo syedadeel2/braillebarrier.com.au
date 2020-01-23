@@ -19,7 +19,7 @@ const Layout = ({ home, children }) => {
                 type="button"
                 onClick={() => setOpen(!isOpen)}
                 className={`${
-                  isOpen ? 'text-white ' : 'text-gray-800'
+                  isOpen ? 'text-white ' : 'text-gray-800 '
                 }absolute flex items-center mt-6 ml-6 text-sm tracking-wider font-bold uppercase transition-colors ease-in duration-250 md:hidden`}
               >
                 {isOpen ? (
