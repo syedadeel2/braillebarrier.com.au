@@ -40,8 +40,6 @@ const Header = ({ home, isOpen, setOpen }) => {
           <p className="mt-1">
             <small>(Just 3 hours from Sydney)</small>
           </p>
-          <p>Barrier Signs Pty. Ltd.</p>
-          <p className="mt-4">ABN: {site.siteMetadata.ABN}</p>
           <p className="mt-4">
             <a href={`tel:${site.siteMetadata.phone.replace(/\s+/g, '')}`}>
               {site.siteMetadata.phone}
