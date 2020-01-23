@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import useGraphql from '../hooks/use-graphql';
 import siteNavigation from '../data/site-navigation';
 
-const Header = ({ home, isOpen }) => {
+const Header = ({ home, isOpen, setOpen }) => {
   const { site } = useGraphql();
   return (
     <header
@@ -19,7 +19,11 @@ const Header = ({ home, isOpen }) => {
           {siteNavigation.map(navItem => (
             <li key={navItem.id} className="flex">
               {home ? (
-                <AnchorLink href={navItem.href} className="pt-4">
+                <AnchorLink
+                  href={navItem.href}
+                  onClick={() => setOpen(!isOpen)}
+                  className="pt-4"
+                >
                   {navItem.label}
                 </AnchorLink>
               ) : (
@@ -57,6 +61,7 @@ const Header = ({ home, isOpen }) => {
 Header.propTypes = {
   home: PropTypes.bool,
   isOpen: PropTypes.bool,
+  setOpen: PropTypes.func,
 };
 
 export default Header;
