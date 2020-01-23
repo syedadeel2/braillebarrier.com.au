@@ -3,6 +3,9 @@ const tw = require('tailwindcss/defaultTheme');
 module.exports = {
   theme: {
     extend: {
+      colors: {
+        'transparent-black': 'hsla(0, 0%, 0%, 0.5)',
+      },
       fontFamily: {
         sans: ['Inter', ...tw.fontFamily.sans],
       },
