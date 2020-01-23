@@ -3,6 +3,7 @@ import { IoIosMenu, IoIosClose } from 'react-icons/io';
 import PropTypes from 'prop-types';
 
 import Header from './header';
+import Footer from './footer';
 
 const Layout = ({ home, children }) => {
   const [isOpen, setOpen] = React.useState(false);
@@ -31,6 +32,7 @@ const Layout = ({ home, children }) => {
               {children}
             </main>
           </div>
+          <Footer />
         </div>
       </div>
     </div>
