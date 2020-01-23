@@ -11,16 +11,15 @@ const About = () => {
             <span className="font-bold">Tactile Signage</span>..
           </h2>
           <p className="mt-12">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-            officiis impedit cum repudiandae dolore doloremque ducimus
-            aspernatur suscipit enim unde excepturi labore delectus! Similique
-            suscipit temporibus officiis dolorum delectus ipsa.
+            <span className="font-bold">Braille@Barrier</span> manufacture all
+            our braille and tactile signs in-house by employing the latest
+            technologies. Our plant is equipped to cut and print custom shapes
+            and standard plates for your requirements.
           </p>
           <p className="mt-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-            dolorem totam molestias illo quo delectus ratione fugiat, dicta
-            autem quas praesentium nobis, itaque sequi aperiam quasi illum omnis
-            eveniet aliquam!
+            Our products are fully complianty with the current Australian
+            Standards AS1428. Our in-house production standards ensure a fast
+            turnaround for your products.
           </p>
           <a href="/" className="bg-gradient button">
             Enquire today
