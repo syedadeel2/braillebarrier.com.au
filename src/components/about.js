@@ -8,7 +8,7 @@ const About = () => {
           <h2 className="mt-12 h2">
             We <span className="font-bold">specialise</span> in{' '}
             <span className="font-bold">Braille</span> and{' '}
-            <span className="font-bold">Tactile Signage</span>..
+            <span className="font-bold">Tactile Signage</span>.
           </h2>
           <p className="mt-12">
             <span className="font-bold">Braille@Barrier</span> manufacture all
