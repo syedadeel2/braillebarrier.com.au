@@ -10,7 +10,7 @@ const Header = ({ home, isOpen, setOpen }) => {
   const { site } = useGraphql();
   return (
     <header
-      className={`fixed h-screen px-12 py-24 overflow-y-auto font-medium text-white bg-blue-600 transform transition ease-in duration-200 md:sticky md:top-0 md:bottom-0 md:left-0 w-80 bg-gradient md:translate-x-0${
+      className={`fixed h-screen z-10 px-12 py-24 overflow-y-auto font-medium text-white bg-blue-600 transform transition ease-in duration-200 md:sticky md:top-0 md:bottom-0 md:left-0 w-80 bg-gradient md:translate-x-0${
         isOpen ? ' translate-x-0' : ' -translate-x-full'
       }`}
     >
