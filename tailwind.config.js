@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', ...tw.fontFamily.sans],
       },
+      maxWidth: {
+        '1920': '1920px',
+      },
       spacing: {
         '72': '18rem',
         '80': '20rem',
