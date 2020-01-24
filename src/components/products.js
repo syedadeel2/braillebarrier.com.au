@@ -4,11 +4,11 @@ import Image from 'gatsby-image';
 import useGraphql from '../hooks/use-graphql';
 import pointer from '../images/pointer.svg';
 
-const NeedBrailleSignage = () => {
-  const { needBrailleSignageImage } = useGraphql();
+const Products = () => {
+  const { productsImage } = useGraphql();
   return (
     <article
-      id="need-braille-signage"
+      id="products"
       className="relative px-6 py-12 text-white bg-gradient"
     >
       <div className="absolute inset-x-0 top-0 flex justify-center transform -translate-y-1/2">
@@ -31,7 +31,7 @@ const NeedBrailleSignage = () => {
           </div>
           <div className="relative flex-shrink-0 w-40 mt-12 -mb-32 lg:-mb-0 lg:ml-6 lg:mt-0">
             <div className="w-full lg:absolute lg:inset-0 lg:-mt-40">
-              <Image fluid={needBrailleSignageImage.childImageSharp.fluid} />
+              <Image fluid={productsImage.childImageSharp.fluid} />
             </div>
           </div>
         </div>
@@ -40,4 +40,4 @@ const NeedBrailleSignage = () => {
   );
 };
 
-export default NeedBrailleSignage;
+export default Products;

@@ -19,7 +19,7 @@ const useGraphql = () => {
           }
         }
       }
-      needBrailleSignageImage: file(
+      productsImage: file(
         relativePath: { eq: "need-braille-signage-image.png" }
       ) {
         childImageSharp {
