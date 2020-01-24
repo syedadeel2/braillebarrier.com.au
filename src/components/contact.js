@@ -11,10 +11,15 @@ const Contact = () => {
             today.
           </h2>
           <p className="mt-12">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-            officiis impedit cum repudiandae dolore doloremque ducimus
-            aspernatur suscipit enim unde excepturi labore delectus! Similique
-            suscipit temporibus officiis dolorum delectus ipsa.
+            Fill out this form below and one of our friendly staff members will
+            get back to you shortly. In the meantime{' '}
+            <a
+              href="/resources/information-booklet.pdf"
+              className="inline-block font-semibold hover:underline"
+            >
+              click here
+            </a>{' '}
+            to download our latest information booklet.
           </p>
           <Form />
         </div>
