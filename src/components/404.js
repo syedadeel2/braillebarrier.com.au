@@ -11,8 +11,9 @@ const Success = () => {
         <div className="pt-6">
           <h2 className="mt-12 h2">
             Looks like you've followed a{' '}
-            <span className="font-bold">broken link</span> or entered a URL that{' '}
-            <span className="font-bold">doesn't exist</span> on this site.
+            <span className="font-semibold">broken link</span> or entered a URL
+            that <span className="font-semibold">doesn't exist</span> on this
+            site.
           </h2>
           <p className="mt-12">
             <Link to="/" className="w-auto mt-0 bg-gradient button">

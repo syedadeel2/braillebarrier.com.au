@@ -13,7 +13,7 @@ const Footer = () => {
         </h2>
         <div className="mt-6 md:text-right md:mt-0">
           <p>
-            <span className="font-bold">{site.siteMetadata.address}</span>{' '}
+            <span className="font-semibold">{site.siteMetadata.address}</span>{' '}
             <small className="inline-block">(Just 3 hours from Sydney)</small>
           </p>
           <p className="mt-2">
@@ -40,7 +40,7 @@ const Footer = () => {
           href="https://www.phirannodesigns.com.au"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-bold"
+          className="font-semibold"
         >
           Phiranno Designs {new Date().getFullYear()}
         </a>

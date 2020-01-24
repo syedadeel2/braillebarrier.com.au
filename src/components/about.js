@@ -6,13 +6,13 @@ const About = () => {
       <div className="w-full max-w-3xl mx-auto">
         <div className="pt-6">
           <h2 className="mt-12 h2">
-            We <span className="font-bold">specialise</span> in{' '}
-            <span className="font-bold">Braille</span> and{' '}
-            <span className="font-bold">Tactile Signage</span>.
+            We <span className="font-semibold">specialise</span> in{' '}
+            <span className="font-semibold">Braille</span> and{' '}
+            <span className="font-semibold">Tactile Signage</span>.
           </h2>
           <p className="mt-12">
-            <span className="font-bold">Braille@Barrier</span> manufacture all
-            our braille and tactile signs in-house by employing the latest
+            <span className="font-semibold">Braille@Barrier</span> manufacture
+            all our braille and tactile signs in-house by employing the latest
             technologies. Our plant is equipped to cut and print custom shapes
             and standard plates for your requirements.
           </p>

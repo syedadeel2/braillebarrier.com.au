@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Gibson";
+  src: url("/fonts/gibson-light-webfont.woff2") format("woff2"),
+    url("/fonts/gibson-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gibson";
+  src: url("/fonts/gibson-lightitalic-webfont.woff2") format("woff2"),
+    url("/fonts/gibson-lightitalic-webfont.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gibson";
+  src: url("/fonts/gibson-regular-webfont.woff2") format("woff2"),
+    url("/fonts/gibson-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gibson";
+  src: url("/fonts/gibson-italic-webfont.woff2") format("woff2"),
+    url("/fonts/gibson-italic-webfont.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gibson";
+  src: url("/fonts/gibson-semibold-webfont.woff2") format("woff2"),
+    url("/fonts/gibson-semibold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gibson";
+  src: url("/fonts/gibson-semibolditalic-webfont.woff2") format("woff2"),
+    url("/fonts/gibson-semibolditalic-webfont.woff") format("woff");
+  font-weight: 600;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gibson";
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+  src: url("/fonts/gibson-bold-webfont.woff2") format("woff2"),
+    url("/fonts/gibson-bold-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gibson";
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+  src: url("/fonts/gibson-bolditalic-webfont.woff2") format("woff2"),
+    url("/fonts/gibson-bolditalic-webfont.woff") format("woff");
+}

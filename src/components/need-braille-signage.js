@@ -14,9 +14,9 @@ const NeedBrailleSignage = () => {
         <div className="lg:flex">
           <div>
             <h2 className="mt-12 text-white h2">
-              Need <span className="font-bold">specialise</span> in{' '}
-              <span className="font-bold">Braille</span> and{' '}
-              <span className="font-bold">Tactile Signage</span>.
+              Need <span className="font-semibold">specialise</span> in{' '}
+              <span className="font-semibold">Braille</span> and{' '}
+              <span className="font-semibold">Tactile Signage</span>.
             </h2>
             <a href="/" className="w-auto mt-12 text-blue-600 bg-white button">
               View our Products here

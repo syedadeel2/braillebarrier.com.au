@@ -12,8 +12,8 @@ const Home = () => {
         <TopBar />
         <div className="pt-6">
           <h2 className="mt-12 h2">
-            We create <span className="font-bold">custom Braille</span> and{' '}
-            <span className="font-bold">Tactile Signage</span>.
+            We create <span className="font-semibold">custom Braille</span> and{' '}
+            <span className="font-semibold">Tactile Signage</span>.
           </h2>
           <div className="mt-12 lg:flex">
             <p>

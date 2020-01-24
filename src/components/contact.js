@@ -7,7 +7,8 @@ const Contact = () => {
       <div className="w-full max-w-3xl mx-auto">
         <div className="py-6">
           <h2 className="mt-12 h2">
-            Talk to our <span className="font-bold">friendly staff</span> today.
+            Talk to our <span className="font-semibold">friendly staff</span>{' '}
+            today.
           </h2>
           <p className="mt-12">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,

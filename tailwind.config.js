@@ -7,7 +7,7 @@ module.exports = {
         'transparent-black': 'hsla(0, 0%, 0%, 0.5)',
       },
       fontFamily: {
-        sans: ['Inter', ...tw.fontFamily.sans],
+        sans: ['Gibson', ...tw.fontFamily.sans],
       },
       maxWidth: {
         '1920': '1920px',

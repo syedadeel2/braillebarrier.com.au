@@ -10,8 +10,9 @@ const Success = () => {
         <TopBar />
         <div className="pt-6">
           <h2 className="mt-12 h2">
-            Message <span className="font-bold">received</span>. <br />
-            We'll get back to you <span className="font-bold">shortly</span>.
+            Message <span className="font-semibold">received</span>. <br />
+            We'll get back to you <span className="font-semibold">shortly</span>
+            .
           </h2>
           <p className="mt-12">
             <Link to="/" className="w-auto mt-0 bg-gradient button">
