@@ -14,22 +14,26 @@ const Layout = ({ home, children }) => {
         <div className="shadow">
           <div className="relative flex font-sans antialiased text-gray-700">
             <Header home={home} isOpen={isOpen} setOpen={setOpen} />
-            <main id="main" className="flex-1 w-full min-h-screen">
-              <button
-                type="button"
-                onClick={() => setOpen(!isOpen)}
-                className={`${
-                  isOpen ? 'text-white ' : 'text-gray-800 '
-                }absolute flex items-center mt-6 ml-6 text-sm tracking-wider font-bold uppercase transition-colors ease-in duration-250 md:hidden`}
-              >
-                {isOpen ? (
-                  <IoIosClose className="mr-1 text-3xl" />
-                ) : (
-                  <IoIosMenu className="mr-1 text-3xl" />
-                )}
-                Menu
-              </button>
-              {children}
+            <main id="main" className="relative flex-1 w-full min-h-screen">
+              <div className="px-6">
+                <div className="w-full max-w-3xl mx-auto">
+                  <button
+                    type="button"
+                    onClick={() => setOpen(!isOpen)}
+                    className={`${
+                      isOpen ? 'text-white ' : 'text-gray-800 '
+                    }absolute flex items-center mt-6 text-sm tracking-wider font-bold uppercase transition-colors ease-in duration-250 lg:hidden`}
+                  >
+                    {isOpen ? (
+                      <IoIosClose className="mr-1 text-3xl" />
+                    ) : (
+                      <IoIosMenu className="mr-1 text-3xl" />
+                    )}
+                    Menu
+                  </button>
+                </div>
+              </div>
+              <div className="mt-6 lg:mt-0">{children}</div>
             </main>
           </div>
           <Footer />
