@@ -34,7 +34,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="px-12 pt-3 pb-6 font-light text-center border-t-2 border-gray-800">
+      <div className="px-12 pt-3 pb-6 font-light text-center border-t-2 border-gray-300">
         Website design by{' '}
         <a
           href="https://www.phirannodesigns.com.au"
