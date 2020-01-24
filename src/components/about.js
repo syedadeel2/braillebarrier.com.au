@@ -1,4 +1,5 @@
 import React from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const About = () => {
   return (
@@ -21,9 +22,9 @@ const About = () => {
             Standards AS1428. Our in-house production standards ensure a fast
             turnaround for your products.
           </p>
-          <a href="/" className="bg-gradient button">
+          <AnchorLink href="#contact" className="bg-gradient button">
             Enquire today
-          </a>
+          </AnchorLink>
         </div>
       </div>
     </article>
