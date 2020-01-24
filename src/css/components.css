@@ -11,7 +11,12 @@
   background-repeat: initial initial;
 }
 .button {
-  @apply inline-block px-4 py-1 mt-6 font-semibold text-white whitespace-no-wrap rounded-l-full rounded-r-full w-40 text-center;
+  @apply inline-block px-4 py-1 mt-6 font-semibold text-white whitespace-no-wrap rounded-l-full rounded-r-full w-40 text-center relative;
+}
+
+.button:hover {
+  top: -1px;
+  @apply shadow-md;
 }
 
 .h2 {
