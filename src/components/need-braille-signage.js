@@ -18,7 +18,10 @@ const NeedBrailleSignage = () => {
               <span className="font-semibold">Braille</span> and{' '}
               <span className="font-semibold">Tactile Signage</span>.
             </h2>
-            <a href="/" className="w-auto mt-12 text-blue-600 bg-white button">
+            <a
+              href="/resources/information-booklet.pdf"
+              className="w-auto mt-12 text-blue-600 bg-white button"
+            >
               View our Products here
             </a>
           </div>
