@@ -16,14 +16,14 @@ const Header = ({ home, isOpen, setOpen }) => {
         onClick={() => setOpen(false)}
         className={
           isOpen
-            ? 'fixed inset-0 transition-colors w-full h-full bg-transparent-black z-10 duration-200'
+            ? 'fixed inset-0 transition-colors w-full h-full bg-transparent-black z-50 duration-200'
             : 'bg-transparent pointer-events-none'
         }
       >
         <span className="sr-only">Close Menu</span>
       </button>
       <header
-        className={`fixed h-screen z-10 px-6 py-24 font-medium text-white bg-blue-600 transform transition ease-in duration-200 lg:sticky lg:top-0 lg:bottom-0 lg:left-0 w-80 bg-gradient lg:translate-x-0${
+        className={`fixed h-screen z-50 px-6 py-24 font-medium text-white bg-blue-600 transform transition ease-in duration-200 lg:sticky lg:top-0 lg:bottom-0 lg:left-0 w-80 bg-gradient lg:translate-x-0${
           isOpen ? ' translate-x-0' : ' -translate-x-full'
         }`}
       >

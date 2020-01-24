@@ -22,7 +22,7 @@ const Home = () => {
               aspernatur suscipit enim unde excepturi labore delectus! Similique
               suscipit temporibus officiis dolorum delectus ipsa.
             </p>
-            <div className="flex-shrink-0 mt-12 -mb-32 w-80 lg:mt-0 lg:ml-6">
+            <div className="relative z-10 flex-shrink-0 mt-12 -mb-32 w-80 lg:mt-0 lg:ml-6">
               <Image fluid={homeImage.childImageSharp.fluid} />
             </div>
           </div>
