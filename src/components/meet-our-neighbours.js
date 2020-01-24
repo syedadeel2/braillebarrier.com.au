@@ -1,5 +1,8 @@
 import React from 'react';
 
+import barrierSignsLogo from '../images/barrier-signs-logo.svg';
+import juzvolterLogo from '../images/juzvolter-logo.svg';
+
 const MeetOurNeighbours = () => {
   return (
     <article id="meet-our-neighbours" className="px-6 py-12 bg-gray-200">
@@ -12,8 +15,10 @@ const MeetOurNeighbours = () => {
           </h2>
           <div className="flex flex-wrap pt-6 -mx-4">
             <div className="w-full px-4 mt-12 lg:w-1/2">
-              <h3>Barrier Signs</h3>
-              <p className="line-clamp ">
+              <h3>
+                <img src={barrierSignsLogo} alt="" className="h-12" />
+              </h3>
+              <p className="mt-6 line-clamp">
                 <span className="font-bold">Barrier Signs</span> is a premier
                 signage company with a proven history of first-class workmanship
                 and professionalism. Priding itself on meticulous quality
@@ -22,16 +27,20 @@ const MeetOurNeighbours = () => {
               </p>
               <p>
                 <a
-                  href="/"
-                  className="w-auto text-sm uppercase bg-gradient button"
+                  href="https://www.barriersigns.com.au"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-auto text-xs tracking-wider uppercase bg-gradient button"
                 >
                   Find out more about barrier signs
                 </a>
               </p>
             </div>
             <div className="w-full px-4 mt-12 lg:w-1/2 lg:border-l-2">
-              <h3>JUZVOLTER</h3>
-              <p className="line-clamp">
+              <h3>
+                <img src={juzvolterLogo} alt="" className="h-12" />
+              </h3>
+              <p className="mt-6 line-clamp">
                 <span className="font-bold">Juzvolter</span> is a Graphic Design
                 Agency based in Taree, NSW. With a strong background in graphic
                 design for a signage context, Juzvolter's unique perspective
@@ -40,8 +49,10 @@ const MeetOurNeighbours = () => {
               </p>
               <p>
                 <a
-                  href="/"
-                  className="w-auto text-sm uppercase bg-gradient button"
+                  href="https://juzvolter.com.au"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-auto text-xs tracking-wider uppercase bg-gradient button"
                 >
                   Need graphic design? Click here
                 </a>
