@@ -1,18 +1,26 @@
 import React from 'react';
+import Image from 'gatsby-image';
 
+import useGraphql from '../hooks/use-graphql';
 import barrierSignsLogo from '../images/barrier-signs-logo.svg';
 import juzvolterLogo from '../images/juzvolter-logo.svg';
 
 const MeetOurNeighbours = () => {
+  const { braille } = useGraphql();
   return (
     <article id="meet-our-neighbours" className="px-6 py-12 bg-gray-200">
       <div className="w-full max-w-3xl mx-auto">
         <div className="pt-6">
-          <h2 className="mt-12 h2">
-            Our <span className="font-bold">neighbours</span> can{' '}
-            <span className="font-bold">help you</span> with your{' '}
-            <span className="font-bold">next project</span>.
-          </h2>
+          <div className="flex flex-wrap-reverse lg:flex-no-wrap">
+            <h2 className="mt-12 h2">
+              Our <span className="font-bold">neighbours</span> can{' '}
+              <span className="font-bold">help you</span> with your{' '}
+              <span className="font-bold">next project</span>.
+            </h2>
+            <div className="flex-shrink-0 w-56 lg:ml-6">
+              <Image fluid={braille.childImageSharp.fluid} className="w-full" />
+            </div>
+          </div>
           <div className="flex flex-wrap pt-6 -mx-4">
             <div className="w-full px-4 mt-12 lg:w-1/2">
               <h3>

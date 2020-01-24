@@ -28,6 +28,13 @@ const useGraphql = () => {
           }
         }
       }
+      braille: file(relativePath: { eq: "braille.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp_noBase64
+          }
+        }
+      }
     }
   `);
   return data;
