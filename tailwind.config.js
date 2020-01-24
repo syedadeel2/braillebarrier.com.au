@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       colors: {
         'transparent-black': 'hsla(0, 0%, 0%, 0.5)',
+        gray: {
+          '200': '#f3f3f4',
+        },
       },
       fontFamily: {
         sans: ['Gibson', ...tw.fontFamily.sans],
