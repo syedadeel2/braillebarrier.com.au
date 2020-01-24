@@ -68,12 +68,18 @@ const Header = ({ home, isOpen, setOpen }) => {
               <small>(Just 3 hours from Sydney)</small>
             </p>
             <p className="mt-4">
-              <a href={`tel:${site.siteMetadata.phone.replace(/\s+/g, '')}`}>
+              <a
+                href={`tel:${site.siteMetadata.phone.replace(/\s+/g, '')}`}
+                className="hover:underline"
+              >
                 {site.siteMetadata.phone}
               </a>
             </p>
             <p className="mt-4">
-              <a href={`mailto:${site.siteMetadata.email}`}>
+              <a
+                href={`mailto:${site.siteMetadata.email}`}
+                className="hover:underline"
+              >
                 {site.siteMetadata.email}
               </a>
             </p>
