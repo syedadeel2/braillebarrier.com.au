@@ -2,14 +2,18 @@ import React from 'react';
 import Image from 'gatsby-image';
 
 import useGraphql from '../hooks/use-graphql';
+import pointer from '../images/pointer.svg';
 
 const NeedBrailleSignage = () => {
   const { needBrailleSignageImage } = useGraphql();
   return (
     <article
       id="need-braille-signage"
-      className="px-6 py-12 text-white bg-gradient"
+      className="relative px-6 py-12 text-white bg-gradient"
     >
+      <div className="absolute inset-x-0 top-0 flex justify-center transform -translate-y-1/2">
+        <img src={pointer} alt="" className="h-12" />
+      </div>
       <div className="w-full max-w-3xl pt-6 mx-auto">
         <div className="lg:flex">
           <div>

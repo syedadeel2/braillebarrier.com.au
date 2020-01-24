@@ -1,9 +1,14 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
+import pointer from '../images/pointer.svg';
+
 const About = () => {
   return (
-    <article id="about" className="px-6 py-12 bg-gray-200">
+    <article id="about" className="relative px-6 py-12 bg-gray-200">
+      <div className="absolute inset-x-0 top-0 flex justify-center transform -translate-y-1/2">
+        <img src={pointer} alt="" className="h-12" />
+      </div>
       <div className="w-full max-w-3xl mx-auto">
         <div className="pt-6">
           <h2 className="mt-12 h2">

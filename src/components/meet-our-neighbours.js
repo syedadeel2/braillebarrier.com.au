@@ -2,13 +2,20 @@ import React from 'react';
 import Image from 'gatsby-image';
 
 import useGraphql from '../hooks/use-graphql';
+import pointer from '../images/pointer.svg';
 import barrierSignsLogo from '../images/barrier-signs-logo.svg';
 import juzvolterLogo from '../images/juzvolter-logo.svg';
 
 const MeetOurNeighbours = () => {
   const { braille } = useGraphql();
   return (
-    <article id="meet-our-neighbours" className="px-6 py-12 bg-gray-200">
+    <article
+      id="meet-our-neighbours"
+      className="relative px-6 py-12 bg-gray-200"
+    >
+      <div className="absolute inset-x-0 top-0 flex justify-center transform -translate-y-1/2">
+        <img src={pointer} alt="" className="h-12" />
+      </div>
       <div className="w-full max-w-3xl mx-auto">
         <div className="flex flex-wrap-reverse lg:flex-no-wrap">
           <h2 className="mt-12 h2">
