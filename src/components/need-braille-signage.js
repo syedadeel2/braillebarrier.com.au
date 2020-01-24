@@ -29,7 +29,7 @@ const NeedBrailleSignage = () => {
               View our Products here
             </a>
           </div>
-          <div className="relative flex-shrink-0 w-40 mt-12 lg:ml-6 lg:mt-0">
+          <div className="relative flex-shrink-0 w-40 mt-12 -mb-32 lg:-mb-0 lg:ml-6 lg:mt-0">
             <div className="w-full lg:absolute lg:inset-0 lg:-mt-40">
               <Image fluid={needBrailleSignageImage.childImageSharp.fluid} />
             </div>
