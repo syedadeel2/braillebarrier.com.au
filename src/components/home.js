@@ -1,8 +1,11 @@
 import React from 'react';
+import Image from 'gatsby-image';
 
 import TopBar from './topbar';
+import useGraphql from '../hooks/use-graphql';
 
 const Home = () => {
+  const { homeImage } = useGraphql();
   return (
     <article id="home" className="px-6 py-12">
       <div className="w-full max-w-3xl pt-6 mx-auto">
@@ -12,12 +15,17 @@ const Home = () => {
             We create <span className="font-bold">custom Braille</span> and{' '}
             <span className="font-bold">Tactile Signage</span>.
           </h2>
-          <p className="mt-12">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-            officiis impedit cum repudiandae dolore doloremque ducimus
-            aspernatur suscipit enim unde excepturi labore delectus! Similique
-            suscipit temporibus officiis dolorum delectus ipsa.
-          </p>
+          <div className="mt-12 lg:flex">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+              officiis impedit cum repudiandae dolore doloremque ducimus
+              aspernatur suscipit enim unde excepturi labore delectus! Similique
+              suscipit temporibus officiis dolorum delectus ipsa.
+            </p>
+            <div className="flex-shrink-0 mt-12 -mb-32 w-80 lg:mt-0 lg:ml-6">
+              <Image fluid={homeImage.childImageSharp.fluid} />
+            </div>
+          </div>
         </div>
       </div>
     </article>
