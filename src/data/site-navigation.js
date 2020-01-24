@@ -1,21 +1,26 @@
 const siteNavigation = [
   {
-    id: 0,
+    id: 1,
     label: 'Home',
     href: '#home',
   },
   {
-    id: 1,
+    id: 2,
     label: 'About',
     href: '#about',
   },
   {
-    id: 2,
+    id: 3,
+    label: 'Products',
+    href: '#products',
+  },
+  {
+    id: 4,
     label: 'Contact',
     href: '#contact',
   },
   {
-    id: 3,
+    id: 5,
     label: 'Meet Our Neighbours',
     href: '#meet-our-neighbours',
   },
