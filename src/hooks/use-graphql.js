@@ -12,6 +12,22 @@ const useGraphql = () => {
           email
         }
       }
+      homeImage: file(relativePath: { eq: "home-image.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp_noBase64
+          }
+        }
+      }
+      needBrailleSignageImage: file(
+        relativePath: { eq: "need-braille-signage-image.png" }
+      ) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid_withWebp_noBase64
+          }
+        }
+      }
     }
   `);
   return data;
