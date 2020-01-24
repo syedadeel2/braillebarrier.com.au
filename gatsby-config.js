@@ -23,18 +23,18 @@ module.exports = {
         siteUrl: `https://www.braillebarrier.com.au`,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: `gatsby-starter-tailwindcss`,
-    //     short_name: `starter`,
-    //     start_url: `/`,
-    //     background_color: `#fff`,
-    //     theme_color: `#319795`,
-    //     display: `minimal-ui`,
-    //     icon: `src/images/logo.svg`, // This path is relative to the root of the site.
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `gatsby-starter-tailwindcss`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#27aae1`,
+        display: `minimal-ui`,
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+      },
+    },
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
