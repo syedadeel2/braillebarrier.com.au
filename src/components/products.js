@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'gatsby-image';
 
 import useGraphql from '../hooks/use-graphql';
-import pointer from '../images/pointer.svg';
+import pointer from '../images/pointer-black.svg';
 
 const Products = () => {
   const { productsImage } = useGraphql();

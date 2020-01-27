@@ -1,7 +1,7 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-import pointer from '../images/pointer.svg';
+import pointer from '../images/pointer-black.svg';
 
 const About = () => {
   return (
