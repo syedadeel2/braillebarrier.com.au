@@ -27,8 +27,8 @@ const Products = () => {
               View our Products here
             </a>
           </div>
-          <div className="relative flex-shrink-0 w-40 mt-12 -mb-32 lg:-mb-0 lg:ml-6 lg:mt-0">
-            <div className="w-full lg:absolute lg:inset-0 lg:-mt-40">
+          <div className="relative flex-shrink-0 hidden w-40 lg:block lg:ml-6">
+            <div className="w-full lg:absolute lg:inset-0 lg:-mt-48">
               <Image fluid={productsImage.childImageSharp.fluid} />
             </div>
           </div>
