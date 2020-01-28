@@ -11,7 +11,7 @@ import MeetOurNeighbours from '../components/meet-our-neighbours';
 const IndexPage = () => {
   return (
     <Layout home>
-      <SEO title="Home" />
+      <SEO title="Custom Braille &amp; Tactile Signage" />
       <Home />
       <About />
       <Products />

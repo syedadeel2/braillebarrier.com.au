@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Braille@Barrier`,
-    description: `We create custom braille and tactile signage!`,
+    description: `Braille@Barrier manufacture all our braille and tactile signs in-house by employing the latest technologies. Our plant is equipped to cut and print custom shapes and standard plates for your requirements.`,
     author: ``,
     address: `15-19 Grey Gum Road, Taree, 2430`,
     ABN: `53 003 154 041`,
