@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         'transparent-black': 'hsla(0, 0%, 0%, 0.5)',
         gray: {
+          ...tw.colors.gray,
           '200': '#f3f3f4',
         },
       },
