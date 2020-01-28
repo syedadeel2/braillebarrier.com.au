@@ -8,15 +8,17 @@ import Products from '../components/products';
 import Contact from '../components/contact';
 import MeetOurNeighbours from '../components/meet-our-neighbours';
 
-const IndexPage = () => (
-  <Layout home>
-    <SEO title="Home" />
-    <Home />
-    <About />
-    <Products />
-    <Contact />
-    <MeetOurNeighbours />
-  </Layout>
-);
+const IndexPage = () => {
+  return (
+    <Layout home>
+      <SEO title="Home" />
+      <Home />
+      <About />
+      <Products />
+      <Contact />
+      <MeetOurNeighbours />
+    </Layout>
+  );
+};
 
 export default IndexPage;
