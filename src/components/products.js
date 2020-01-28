@@ -2,16 +2,22 @@ import React from 'react';
 import { InView } from 'react-intersection-observer';
 import Image from 'gatsby-image';
 
-import SiteContext from '../context/provider';
+// import SiteContext from '../context/provider';
 import useGraphql from '../hooks/use-graphql';
 import pointer from '../images/pointer-black.svg';
 
 const Products = () => {
-  const { siteNavigation } = React.useContext(SiteContext);
+  // const { navItems, setNavItems } = React.useContext(SiteContext);
   const { productsImage } = useGraphql();
   return (
     <InView>
       {({ inView, ref }) => {
+        // const active = navItems.map(navItem =>
+        //   navItem.label === 'Products'
+        //     ? (navItem.isActive = true)
+        //     : (navItem.isActive = false)
+        // );
+        // if (inView) setNavItems(...navItems, active);
         return (
           <article
             ref={ref}

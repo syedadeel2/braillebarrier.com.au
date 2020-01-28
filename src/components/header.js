@@ -9,7 +9,7 @@ import useGraphql from '../hooks/use-graphql';
 
 const Header = ({ home, isOpen, setOpen }) => {
   const { site } = useGraphql();
-  const { siteNavigation } = React.useContext(SiteContext);
+  const { navItems, setNavItems } = React.useContext(SiteContext);
   return (
     <>
       <button
@@ -41,7 +41,7 @@ const Header = ({ home, isOpen, setOpen }) => {
         </button>
         <nav>
           <ul className="w-full leading-tight uppercase">
-            {siteNavigation.map(navItem => (
+            {navItems.map(navItem => (
               <li key={navItem.id} className="flex">
                 {home ? (
                   <AnchorLink
