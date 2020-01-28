@@ -4,11 +4,12 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 
+import SiteContext from '../context/provider';
 import useGraphql from '../hooks/use-graphql';
-import siteNavigation from '../data/site-navigation';
 
 const Header = ({ home, isOpen, setOpen }) => {
   const { site } = useGraphql();
+  const { siteNavigation } = React.useContext(SiteContext);
   return (
     <>
       <button
@@ -23,7 +24,7 @@ const Header = ({ home, isOpen, setOpen }) => {
         <span className="sr-only">Close Menu</span>
       </button>
       <header
-        className={`fixed h-screen z-50 px-6 py-24 font-medium text-white bg-blue-600 transform transition ease-in duration-200 lg:sticky lg:top-0 lg:bottom-0 lg:left-0 w-80 bg-gradient lg:translate-x-0${
+        className={`fixed h-screen z-50 py-24 font-medium text-white bg-blue-600 transform transition ease-in duration-200 lg:sticky lg:top-0 lg:bottom-0 lg:left-0 w-80 bg-gradient lg:translate-x-0${
           isOpen ? ' translate-x-0' : ' -translate-x-full'
         }`}
       >
@@ -39,21 +40,25 @@ const Header = ({ home, isOpen, setOpen }) => {
           <IoIosClose aria-label="Close menu" />
         </button>
         <nav>
-          <ul className="w-40 leading-tight uppercase">
+          <ul className="w-full leading-tight uppercase">
             {siteNavigation.map(navItem => (
               <li key={navItem.id} className="flex">
                 {home ? (
                   <AnchorLink
                     href={navItem.href}
                     onClick={() => setOpen(false)}
-                    className="pt-4 hover:underline"
+                    className={`${
+                      navItem.isActive ? 'active ' : ''
+                    }relative mt-4 px-12 hover:underline w-full`}
                   >
                     {navItem.label}
                   </AnchorLink>
                 ) : (
                   <Link
                     to={`/${navItem.href}`}
-                    className="pt-4 hover:underline"
+                    className={`${
+                      navItem.isActive ? 'active ' : ''
+                    }relative mt-4 px-12 hover:underline w-full`}
                   >
                     {navItem.label}
                   </Link>
@@ -61,9 +66,9 @@ const Header = ({ home, isOpen, setOpen }) => {
               </li>
             ))}
           </ul>
-          <hr className="w-8 mt-8 border-t-4 border-white" />
-          <div className="w-40 leading-tight">
-            <p className="mt-4">{site.siteMetadata.address}</p>
+          <div className="w-full px-12 leading-tight">
+            <hr className="w-8 mt-8 border-t-4 border-white" />
+            <p className="mt-6">{site.siteMetadata.address}</p>
             <p className="mt-1">
               <small>(Just 3 hours from Sydney)</small>
             </p>
