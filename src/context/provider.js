@@ -6,10 +6,12 @@ import siteNavigation from '../data/site-navigation';
 const SiteContext = React.createContext();
 
 export const SiteProvider = function({ children }) {
+  const [navItems, setNavItems] = React.useState(siteNavigation);
   return (
     <SiteContext.Provider
       value={{
-        siteNavigation,
+        navItems,
+        setNavItems,
       }}
     >
       {children}

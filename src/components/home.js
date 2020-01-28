@@ -7,7 +7,7 @@ import SiteContext from '../context/provider';
 import useGraphql from '../hooks/use-graphql';
 
 const Home = () => {
-  const { siteNavigation } = React.useContext(SiteContext);
+  const { navItems, setNavItems } = React.useContext(SiteContext);
   const { homeImage } = useGraphql();
   return (
     <InView>
