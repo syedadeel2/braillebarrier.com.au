@@ -22,8 +22,6 @@ const Form = () => {
     [message]: '',
   });
 
-  console.log(state);
-
   const handleChange = e =>
     setState({ ...state, [e.target.name]: e.target.value });
 
