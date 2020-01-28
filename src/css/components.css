@@ -19,6 +19,12 @@
   @apply shadow-md;
 }
 
+.active::before {
+  @apply block absolute bg-no-repeat inset-y-0 my-auto flex items-center justify-center h-3 w-12 left-0 transform -translate-x-4;
+  content: "";
+  background-image: url("../images/pointer-white.svg");
+}
+
 .h2 {
   @apply mt-12 text-4xl leading-none text-black font-light;
 }
