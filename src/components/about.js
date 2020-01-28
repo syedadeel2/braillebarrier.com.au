@@ -23,7 +23,7 @@ const About = () => {
             and standard plates for your requirements.
           </p>
           <p className="mt-4">
-            Our products are fully complianty with the current Australian
+            Our products are fully compliant with the current Australian
             Standards AS1428. Our in-house production standards ensure a fast
             turnaround for your products.
           </p>
