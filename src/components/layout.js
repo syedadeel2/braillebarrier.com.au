@@ -9,10 +9,10 @@ const Layout = ({ home, children }) => {
   const [isOpen, setOpen] = React.useState(false);
 
   return (
-    <div className="bg-gray-100">
+    <div className="font-sans antialiased text-gray-700 bg-gray-100">
       <div className="w-full mx-auto bg-white max-w-1920">
         <div className="shadow">
-          <div className="relative flex font-sans antialiased text-gray-700">
+          <div className="relative flex">
             <Header home={home} isOpen={isOpen} setOpen={setOpen} />
             <main id="main" className="relative flex-1 w-full min-h-screen">
               <div className="px-6">

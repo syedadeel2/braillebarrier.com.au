@@ -15,7 +15,7 @@ const Contact = () => {
             get back to you shortly. In the meantime{' '}
             <a
               href="/resources/information-booklet.pdf"
-              className="inline-block font-semibold hover:underline"
+              className="inline-block font-semibold text-black hover:underline"
             >
               click here
             </a>{' '}
