@@ -24,7 +24,7 @@ const MeetOurNeighbours = () => {
             <span className="font-semibold">next project</span>.
           </h2>
           <div className="flex-shrink-0 w-56 -mt-24 lg:ml-6">
-            <Image fluid={braille.childImageSharp.fluid} className="w-full" />
+            <Image fixed={braille.childImageSharp.fixed} className="w-full" />
           </div>
         </div>
         <div className="flex flex-wrap pt-6 -mx-4">

@@ -12,10 +12,11 @@ const useGraphql = () => {
           email
         }
       }
+
       homeImage: file(relativePath: { eq: "home-image.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp_noBase64
+          fixed(width: 320) {
+            ...GatsbyImageSharpFixed_withWebp_noBase64
           }
         }
       }
@@ -23,15 +24,15 @@ const useGraphql = () => {
         relativePath: { eq: "need-braille-signage-image.png" }
       ) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp_noBase64
+          fixed(width: 160) {
+            ...GatsbyImageSharpFixed_withWebp_noBase64
           }
         }
       }
       braille: file(relativePath: { eq: "braille.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp_noBase64
+          fixed(width: 224) {
+            ...GatsbyImageSharpFixed_withWebp_noBase64
           }
         }
       }
