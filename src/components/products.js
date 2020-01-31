@@ -16,21 +16,23 @@ const Products = () => {
       </div>
       <div className="w-full max-w-3xl pt-6 mx-auto">
         <div className="lg:flex">
-          <div className="relative flex-shrink-0 hidden w-40 lg:block lg:ml-6">
+          <div className="relative flex-shrink-0 hidden w-40 lg:block">
             <div className="w-full lg:absolute lg:inset-0 lg:-mt-48">
               <Image fixed={productsImage.childImageSharp.fixed} />
             </div>
           </div>
-          <div className="lg:ml-auto lg:text-right">
-            <h2 className="mt-12 text-white h2">
-              Need <span className="font-semibold">Braille Signage?</span>
-            </h2>
-            <a
-              href="/resources/information-booklet.pdf"
-              className="w-auto mt-12 text-blue-600 bg-white button"
-            >
-              View our Products here
-            </a>
+          <div className="lg:ml-auto">
+            <div className="lg:ml-12">
+              <h2 className="mt-12 text-white h2">
+                Need <span className="font-semibold">Braille Signage?</span>
+              </h2>
+              <a
+                href="/resources/information-booklet.pdf"
+                className="w-auto mt-12 text-blue-600 bg-white button"
+              >
+                View our Products here
+              </a>
+            </div>
           </div>
         </div>
       </div>
