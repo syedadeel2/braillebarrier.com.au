@@ -4,12 +4,12 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 
+import siteNavigation from '../data/site-navigation';
 import SiteContext from '../context/provider';
 import useGraphql from '../hooks/use-graphql';
 
 const Header = ({ home, isOpen, setOpen }) => {
   const { site } = useGraphql();
-  const { navItems } = React.useContext(SiteContext);
   return (
     <>
       <button
@@ -41,7 +41,7 @@ const Header = ({ home, isOpen, setOpen }) => {
         </button>
         <nav>
           <ul className="w-full leading-tight uppercase">
-            {navItems.map(navItem => (
+            {siteNavigation.map(navItem => (
               <li key={navItem.id} className="flex">
                 {home ? (
                   <AnchorLink
