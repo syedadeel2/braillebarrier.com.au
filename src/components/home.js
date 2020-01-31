@@ -3,13 +3,10 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Image from 'gatsby-image';
 
 import TopBar from './topbar';
-import SiteContext from '../context/provider';
 import useGraphql from '../hooks/use-graphql';
 
 const Home = () => {
-  const { navItems, setNavItems } = React.useContext(SiteContext);
   const { homeImage } = useGraphql();
-
   return (
     <article id="home" className="px-6 pt-12 pb-48">
       <div className="w-full max-w-3xl pt-6 mx-auto">
@@ -42,10 +39,10 @@ const Home = () => {
             <div className="relative z-10 flex-shrink-0 mt-12 -mb-32 w-80 lg:mt-0 lg:ml-6">
               <Image fixed={homeImage.childImageSharp.fixed} />
             </div>
-          </article>
-        );
-      }}
-    </InView>
+          </div>
+        </div>
+      </div>
+    </article>
   );
 };
 

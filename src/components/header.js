@@ -9,7 +9,7 @@ import useGraphql from '../hooks/use-graphql';
 
 const Header = ({ home, isOpen, setOpen }) => {
   const { site } = useGraphql();
-  const { navItems, setNavItems } = React.useContext(SiteContext);
+  const { navItems } = React.useContext(SiteContext);
   return (
     <>
       <button
