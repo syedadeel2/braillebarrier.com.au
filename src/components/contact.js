@@ -17,9 +17,8 @@ const Contact = () => {
               href="/resources/information-booklet.pdf"
               className="inline-block font-semibold text-black hover:underline"
             >
-              click here
-            </a>{' '}
-            to download our latest information booklet.
+              click here to download our latest information booklet.
+            </a>
           </p>
           <Form />
         </div>
