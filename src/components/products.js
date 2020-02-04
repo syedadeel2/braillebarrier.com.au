@@ -28,7 +28,7 @@ const Products = () => {
               </h2>
               <a
                 href="/resources/information-booklet.pdf"
-                className="w-auto mt-12 text-blue-600 bg-white button"
+                className="w-auto mt-12 text-blue-700 bg-white button"
               >
                 View our Products here
               </a>
