@@ -11,12 +11,16 @@
   background-repeat: initial initial;
 }
 .button {
-  @apply inline-block px-4 py-1 mt-6 font-semibold text-white whitespace-no-wrap rounded-l-full rounded-r-full w-40 text-center relative;
+  @apply inline-flex items-center justify-center px-12 py-3 font-semibold text-white whitespace-no-wrap rounded-l-full rounded-r-full leading-none text-center relative text-2xl;
 }
 
 .button:hover {
   top: -1px;
   @apply shadow-md;
+}
+
+.button-small {
+  @apply px-4 py-2 text-base;
 }
 
 .active::before {

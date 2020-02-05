@@ -44,7 +44,7 @@ const MeetOurNeighbours = () => {
                 href="https://www.barriersigns.com.au"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-auto tracking-wider bg-gradient button"
+                className="w-auto mt-6 tracking-wider bg-gradient button button-small"
               >
                 Find out more about Barrier Signs
               </a>
@@ -66,7 +66,7 @@ const MeetOurNeighbours = () => {
                 href="https://juzvolter.com.au"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-auto tracking-wider bg-gradient button"
+                className="w-auto mt-6 tracking-wider bg-gradient button button-small"
               >
                 Need graphic design? Click here
               </a>

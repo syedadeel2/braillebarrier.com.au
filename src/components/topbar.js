@@ -12,7 +12,7 @@ const TopBar = () => {
       </h1>
       <a
         href={`tel:${site.siteMetadata.phone.replace(/\s+/g, '')}`}
-        className="bg-gradient button md:mt-0 md:ml-6 md:mb-3"
+        className="mt-6 bg-gradient button md:mt-0 md:ml-6 md:mb-3"
       >
         {site.siteMetadata.phone}
       </a>

@@ -32,7 +32,7 @@ const Home = () => {
                 Standards AS1428. Our in-house production standards ensure a
                 fast turnaround for your products.
               </p>
-              <AnchorLink href="#contact" className="bg-gradient button">
+              <AnchorLink href="#contact" className="mt-12 bg-gradient button">
                 Enquire today
               </AnchorLink>
             </div>
