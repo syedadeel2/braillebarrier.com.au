@@ -36,6 +36,14 @@ const useGraphql = () => {
           }
         }
       }
+      allSiteNavigationJson {
+        nodes {
+          href
+          id
+          isActive
+          label
+        }
+      }
     }
   `);
   return data;

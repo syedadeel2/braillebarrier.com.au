@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import siteNavigation from '../data/site-navigation';
+import useGraphQL from '../hooks/use-graphql';
 
 const SiteContext = React.createContext();
 
 export const SiteProvider = function({ children }) {
-  const [navItems, setNavItems] = React.useState(siteNavigation);
+  const { allSiteNavigationJson } = useGraphQL();
+  const [navItems, setNavItems] = React.useState(allSiteNavigationJson.nodes);
   return (
     <SiteContext.Provider
       value={{
