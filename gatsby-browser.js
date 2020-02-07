@@ -5,16 +5,10 @@
  */
 // Self host fonts using Typefaces.js https://github.com/KyleAMathews/typefaces
 import 'typeface-inter';
-import React from 'react';
-import PropTypes from 'prop-types';
-
-import { SiteProvider } from './src/context/provider';
+import React from "react"
+import { SiteProvider } from './src/context/SiteContext';
 import './src/css/tailwind.css';
 
 export const wrapRootElement = ({ element }) => (
-  <SiteProvider>{element}</SiteProvider>
-);
-
-wrapRootElement.propTypes = {
-  element: PropTypes.node,
-};
+    <SiteProvider>{element}</SiteProvider>
+)

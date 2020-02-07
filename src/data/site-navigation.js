@@ -3,7 +3,7 @@ const siteNavigation = [
     id: 1,
     label: 'Home',
     href: '#home',
-    isActive: false,
+    isActive: true,
   },
   {
     id: 2,
